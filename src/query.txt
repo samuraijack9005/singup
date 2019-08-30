@@ -1,0 +1,6 @@
+curl -i -X POST -H "Content-Type: application/json" -d '{ "name":"vivek","email":"pawar900gmail.com","pass": "123456","number":"9004949807","dob_year":"","salary":"500.50" }' localhost:3000/user
+db.users.insertOne( { name:"vivek",email:"pawar900gmail.com",pass:"123456",number:9004949807,dob_year:2017-08-22,salary:500.50 });
+
+db.users.insertOne( { isbn:"vivek",title:"pawar900@gmail.com",author:"123456",number:9004949807,description:"2017-08-22",published_year:"500.50" });
+
+curl -i -X POST -H "Content-Type: application/json" -d '{ "isbn":"123442123, 97885654453443","title":"Learn how to build modern web application with MEAN stack","author": "Didin J.","description":"The comprehensive step by step tutorial on how to build MEAN (MongoDB, Express.js, Angular 5 and Node.js) stack web application from scratch","published_year":"2017","publisher":"Djamware.com" }' localhost:3000/user

@@ -1,0 +1,43 @@
+<div class="container">
+  <h1>SING UP</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <form (ngSubmit)="saveBook()" #bookForm="ngForm">
+        <div class="form-group">
+          <label for="name">NAME</label>
+          <input type="text" class="form-control" [(ngModel)]="book.name" name="name" required>
+		  
+        </div>
+        <div class="form-group">
+          <label for="name">Email</label>
+          <input type="email" class="form-control"   [(ngModel)]="book.email" name="email" required >
+
+		  
+        </div>
+        <div class="form-group">
+          <label for="name">Password</label>
+          <input type="password" class="form-control"  [(ngModel)]="book.pass" name="pass" required>
+        </div>
+		  <div class="form-group">
+          <label for="name">Phone no.</label>
+          <input type="number" class="form-control" [(ngModel)]="book.number" name="number" required>
+        </div>
+		<div class="form-group">
+          <label for="name">Salary</label>
+          <input type="number" class="form-control" [(ngModel)]="book.salary" name="salary" required>
+        </div>
+        <div class="form-group">
+          <label for="name">DOB</label>
+          <input type="date" class="form-control" [(ngModel)]="book.dob_year" name="dob_year" required>
+        </div>
+        <div class="form-group">
+          <label for="name">Resume</label>
+          <input type="file" class="form-control" placeholder="Attach" accept=".doc,.txt" [(ngModel)]="book.resume" name="resume" >
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success" [disabled]="!bookForm.form.valid">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

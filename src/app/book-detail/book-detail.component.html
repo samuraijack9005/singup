@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>{{ book.name }}</h1>
+  <dl class="list">
+    <dt>phone no.</dt>
+    <dd>{{ book.number }}</dd>
+    <dt>Salary</dt>
+    <dd>{{ book.salary }}</dd>
+    <dt>DOB Year</dt>
+    <dd>{{ book.dob_year }}</dd>
+    <dt>Password</dt>
+    <dd>{{ book.pass }}</dd>
+	
+    
+  </dl>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    
+    <button class="btn btn-danger" type="button" (click)="deleteBook(book._id)">DELETE</button>
+  </div>
+</div>
