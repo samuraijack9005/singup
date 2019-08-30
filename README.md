@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 To Install run 'npm install' in located project folder.
 Run 'mongod'
+
 ![Screenshot](4.png)
 
 ## Development server
