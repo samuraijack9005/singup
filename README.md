@@ -1,7 +1,12 @@
 # MeanAngular5
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.6.
+## Setup
+
 To Install run 'npm install' in located project folder.
+Run 'mongod'
+![Screenshot](4.png)
+
 ## Development server
 
 Run `npm start` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
